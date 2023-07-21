@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+  <h2>Predict Churn Rate of an Employee</h2>
+  
+  <form method="POST" action="/">
+    Age:<br>
+    <input type="number" name="Age" value=30>
+    <br><br>
+    Monthly Income ($):<br>
+    <input type="number" name="MonthlyIncome" value=3000>
+    <br><br>
+    Total Earn In Company:<br>
+    <input type="number" name="TotalEarnInCompany" value=300000>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  {% if pred %}
+  <p>The churn probability of the employee is {{ pred }}</p>
+  {% endif %}
+
+  </body>
+</html>
